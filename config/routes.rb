@@ -1,5 +1,5 @@
 FirstApp::Application.routes.draw do
-  get "static_pages/home"
+  match "/home", to: "static_pages/home"
   get "static_pages/about"
   get "static_pages/help"
 
