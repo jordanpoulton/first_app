@@ -1,5 +1,6 @@
 FirstApp::Application.routes.draw do
-  root to: "static_pages#home"
+
+  root to: "static_pages#index"
   match '/about', to: 'static_pages#about' #Single quote marks are essential here!!!
   match '/help', to: 'static_pages#help'
   match '/contact', to: 'static_pages#contact'
