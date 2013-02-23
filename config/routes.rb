@@ -1,12 +1,8 @@
 FirstApp::Application.routes.draw do
-  match "/home" => "static_pages#home"
+  root to: "static_pages#home"
   match "/about" => "static_pages#about"
   match "/help" => "static_pages#help"
 
-  resources :microposts
-
-
-  resources :users
 
 
   # The priority is based upon order of creation:
