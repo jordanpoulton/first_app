@@ -1,13 +1,10 @@
 FirstApp::Application.routes.draw do
-  match "/home" => "static_pages#home"
-  match "/about" => "static_pages#about"
-  match "/help" => "static_pages#help"
-  match "/contact" => "static_pages#contact"
 
-  resources :microposts
+  root to: "static_pages#home"
+  match '/about', to: 'static_pages#about' #Single quote marks are essential here!!!
+  match '/help', to: 'static_pages#help'
+  match '/contact', to: 'static_pages#contact'
 
-
-  resources :users
 
 
   # The priority is based upon order of creation:
