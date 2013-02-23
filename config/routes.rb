@@ -1,7 +1,7 @@
 FirstApp::Application.routes.draw do
-  match "/home", to: "static_pages/home"
-  get "static_pages/about"
-  get "static_pages/help"
+  match "/home" => "static_pages#home"
+  match "/about" => "static_pages#about"
+  match "/help" => "static_pages#help"
 
   resources :microposts
 
